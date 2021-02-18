@@ -1,0 +1,266 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #e5dccf;
+    color: #412124;
+    font-family: Corbel;
+    font-size: 15px;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 8% 15% 37% 37% 2%;
+    height: 100%;
+    width: 100%;
+}
+.grid > .center{
+    margin: auto;
+    width: 50%;
+}
+/* taki zapis jak powyżej oznacza że style z grida
+ są dalej ważne, ale trzeba też nadać style z center, przepływ sterowania tzw.
+ */
+.header{
+    color: #260C10;
+    font-family: Corbel;
+    font-size: 47px;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 10px;
+}
+.menu-panel-with-center{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin: 15px auto auto auto;
+}
+.bread, .buns, .rolls, .cakes, .contact-me{
+    background-color: #ae9076;
+    border: none;
+    border-radius: 8px;
+    color: #412124;
+    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Corbel;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 10px 60px 10px 60px;
+    text-align: center;
+}
+.search-bar{
+    float: left;
+    margin-top: 0.5rem;
+    outline: none;
+}
+.user-icon, .shopping-icon{
+    float: left;
+    font-size: 35px;
+    margin-left: 1rem;
+}
+.img-slider-placeholder{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+img{
+    border-radius: 10px;
+}
+.responsive {
+    width: 60%;
+    height: auto;
+}
+a:link{
+    color: #412124;
+    text-decoration: none;
+}
+a:visited{
+    color: #412124;
+}
+/*Rem (relative to font-size of the root element)
+ działa niemal na identycznej zasadzie, jak em, z tą różnicą,
+ że rozmiar nie jest dziedziczony bezpośrednio od rodzica,
+ tylko z najwyższego elementu w DOM strony. Najczęściej jest to znacznik HTML
+ */
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    font-size: 15px;
+    font-family: Corbel;
+}
+
+
+/*contact-me styles*/
+
+.contact-me-content{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 15px;
+    color: #60401f;
+
+}
+.first-row-image-from-sessions{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+}
+.second-row-image-from-sessions{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    width: 100%;
+}
+.img-maestro{
+    width: auto;
+    margin: 1px;
+    height: 250px;
+}
+.img-luna,.img-dick,.img-james{
+    width: auto;
+    margin: 0.0rem 0.5rem 0.5rem 0.5rem;
+    height: 250px;
+}
+.image-with-text-centered{
+    display: block;
+    text-align: center;
+    margin: auto; /* horizontally center block element */
+}
+.image-with-text{
+    display: inline-block;
+    text-align: center;
+}
+.text {
+    display: block;
+    font-weight: bolder;
+}
+.text-maestro {
+    display: block;
+    color: #97491b;
+}
+.text-player{
+    display: block;
+    color: #97491b;
+}
+
+/* log-in-styles */
+.login-panel-with-center{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+.submit{
+    margin-top: 3rem;
+}
+.remember-me{
+    font-size: 20px;
+    margin-top: 3rem;
+}
+.forgot-password{
+    font-size: 17px;
+    margin-top: 3rem;
+}
+.input-placeholder{
+    margin: 0rem;
+}
+.input{
+    border-radius: 25px;
+    border-style: none;
+    text-align: center;
+    width: 300px;
+    height: 20px;
+}
+.input-search{
+    border-radius: 25px;
+    border-style: none;
+    text-align: center;
+    width: 210px;
+    height: 20px;
+}
+.btn-submit{
+    height: 35px;
+    width: 150px;
+    color: #260C10;
+    background-color: #ae9076;;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Corbel;
+    border: #ae9076;
+    border-radius: 8px;
+    cursor: pointer;
+    outline:none;
+}
+.btn-register{
+    height: 35px;
+    width: 200px;
+    color: #260C10;
+    background-color: #ae9076;;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Corbel;
+    border: #ae9076;
+    border-radius: 8px;
+    cursor: pointer;
+    outline:none;
+}
+.register-placeholder{
+    font-size: 17px;
+    margin-top: 3rem;
+}
+.don-t-have-an-account-placeholder{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+input{
+    width: 100%;
+    outline: none;
+}
+a.register-text:visited{
+    color: darkred;
+    font-weight: bold;
+}
+a.register-text:link{
+    color: darkred;
+    font-weight: bold;
+}
+
+/* register-styles */
+
+.register-panel-with-center{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+.username, .login-password{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+.name,.last-name,.e-mail,.password,.retype-password{
+    font-size: 21px;
+    font-family: Corbel;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
