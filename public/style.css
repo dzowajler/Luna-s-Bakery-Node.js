@@ -14,7 +14,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 8% 15% 37% 37% 2%;
+    grid-template-rows: 8% 17% 18% 18% 18% 18% 3%;
     height: 100%;
     width: 100%;
 }
@@ -97,8 +97,8 @@ a:visited{
 .footer{
     grid-column-start: 1;
     grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 7;
     font-size: 15px;
     font-family: Corbel;
 }
@@ -166,8 +166,9 @@ a:visited{
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 5;
-
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
 }
 .submit{
     margin-top: 3rem;
@@ -250,7 +251,9 @@ a.register-text:link{
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 6;
+    align-self: center;
+    justify-self: center;
 
 }
 .username, .login-password{
